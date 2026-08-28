@@ -1,0 +1,12 @@
+apiVersion:v1
+kind: Pod
+metadata:
+  name:ranjuspod
+  labels:
+    project:calculator
+spec:
+  containers:
+    - name:ranjuwork
+      image:nginx
+      ports:
+        - containerPort:80

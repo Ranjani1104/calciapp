@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: ranjussets
+  labels:
+    app:calculator
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      project: calculator
+  template:
+    metadata:
+      labels:
+        project: calculator
+    spec:
+      containers:
+        - name: ranjus-container
+          image: nginx
+          ports:
+            - containerPort: 80
