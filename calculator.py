@@ -13,4 +13,4 @@ elif op == "*":
 elif op == "/":
     print(num1 / num2 if num2 != 0 else "Cannot divide by zero")
 else:
-    print("Invalid operator")
+    print("Invalid operator movnaeg")
